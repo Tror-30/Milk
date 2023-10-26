@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вовкина коровка</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon-16x16.png">
+    <link rel="manifest" href="./img/icons/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/media.css">
+    <link rel="stylesheet" href="./style/style-invoice-section.css">
+    <link rel="stylesheet" href="./style/style-prays-section.css">
+</head>
+
+<body>
+    <header>
+        <div id="header-section">
+            <p id="header-text">Вовкина коровка</p>
+            <div id="navigation-panel">
+                <div id="row-panel">
+                    <p id="row-pane-text">Главная</p>
+                </div>
+                <div id="prays-list-panel">
+                    <p id="prays-list-panel-text">Прайс</p>
+                </div>
+                <div id="orders-panel">
+                    <p id="orders-panel-text">Заказы</p>
+                </div>
+                <div id="invoice-panel">
+                    <p id="invoice-panel-text">Накладная</p>
+                </div>
+                <div id="stock-panel">
+                    <p id="strock-panel-text">Склад</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="autorization-section">
+        <div id="autorization-block">
+            <p id="autorization-section-text">Введите логин и пароль</p>
+            <input class="input-autorization" id="input-login" type="text" placeholder="Логин">
+            <input class="input-autorization" id="input-password" type="password" placeholder="Пароль">
+            <div id="button-autorization">Войти</div>
+        </div>
+    </div>
+    <section>
+        <div id="autorization-section">
+            <p id="autorization-section-text">Введите логин и пароль</p>
+            <input class="input-autorization" id="input-login-add" type="text" placeholder="Логин">
+            <input class="input-autorization" id="input-password-add" type="password" placeholder="Пароль">
+            <div id="button-autorization">Войти</div>
+        </div>
+    </section>
+    <section>
+        <div id="row-section">
+            <div>
+                <p id="header-row-section">Натуральные молочные продукты</p>
+            </div>
+        </div>
+        <div id="prays-section">
+            <div id="basket"><img id="basket-img" src="./img/Basket.png" alt="картинка корзины">
+                <div id="counter-product">0</div>
+            </div>
+            <div id="block-basket">
+                <div>
+                    <h3>Список-заказа</h3>
+                    <button id="get-product-list">Отправить</button>
+                </div>
+                <div id="block-basket-list">
+
+                </div>
+            </div>
+            <div id="prays-section-row">
+                <div class="cart">
+                    <div id="cart-milck-blue">
+                        <img class="img1" src="./img/prays-img/milk-2.5-1.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Молоко 2,5%</h3>
+                    <p class="cart-text">Пастеризованное ГОСТ 31450-2013</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: плёнка</h4>
+                        <select class="select-volume" id="select-milck-blue-film">
+                            <option value="0.5">0.5л</option>
+                            <option value="0.9">0.9л</option>
+                            <option value="1">1л</option>
+                        </select>
+                        <p>Срок хранения: 7 суток</p>
+                        <button id="button-add-product-milck-blue-film" >
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div id="cart-milck-blue">
+                        <img class="img2" src="./img/prays-img/milk-2.5-0.9-pet.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Молоко 2,5%</h3>
+                    <p class="cart-text">Пастеризованное ГОСТ 31450-2013</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: ПЭТ-бутылка</h4>
+                        <p>Объём: 0,9л</p>
+                        <p>Срок хранения: 10 суток</p>
+                        <button id="button-add-product-milck-blue-bottle">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div id="cart-kefir">
+                        <img class="img1" src="./img/prays-img/kefir-2.5.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Кефир 2,5%</h3>
+                    <p class="cart-text">Натуральный ГОСТ 311454-2012</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: плёнка</h4>
+                        <select class="select-volume-kefir" id="">
+                            <option value="0.5">0.5л</option>
+                            <option value="0.9">0.9л</option>
+                            <option value="1">1л</option>
+                        </select>
+                        <p>Срок хранения: 10 суток</p>
+                        <button id="button-add-product-kefir">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div id="cart-kefir">
+                        <img class="img2" src="./img/prays-img/kefir-2.5-pet.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Кефир 2,5%</h3>
+                    <p class="cart-text">Натуральный ГОСТ 311454-2012</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: ПЭТ-бутылка</h4>
+                        <p>Объём: 0,9л</p>
+                        <p>Срок хранения: 14 суток</p>
+                        <button id="button-add-product-kefir-bottle">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div id="cart-milck-blue">
+                        <img class="img1" src="./img/prays-img/milk-3.2-1.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Молоко 3,2-4,5%</h3>
+                    <p class="cart-text">Пастеризованное ГОСТ 31450-2013</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: плёнка</h4>
+                        <p>Объём:</p>
+                        <select class="select-volume" id="">
+                            <option value="0.5">0.5л</option>
+                            <option value="0.9">0.9л</option>
+                            <option value="1">1л</option>
+                        </select>
+                        <p>Срок хранения: 7 суток</p>
+                        <button id="button-add-product-milck-red">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div id="cart-milck-blue">
+                        <img class="img2" src="./img/prays-img/milk-3.2-pet.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Молоко 3,2-4,5%</h3>
+                    <p class="cart-text">Пастеризованное ГОСТ 31450-2013</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: ПЭТ-бутылка</h4>
+                        <p>Объём: 0,9л</p>
+                        <select class="select-volume">
+                            <option value="3.2">3,2%</option>
+                            <option value="4.5">4,5%</option>
+                        </select>
+                        <p>Срок хранения: 10 суток</p>
+                        <button id="button-add-product-milck-red-bottle">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div id="cart-milck-blue">
+                        <img class="img3" src="./img/prays-img/bifiliv.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Бифилайф 2,5%</h3>
+                    <p class="cart-text">Биопродукт ТУ 9222-001-14173891-08</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: плёнка</h4>
+                        <p>Объём: 0,5л</p>
+                        <p>Срок хранения: 10 суток</p>
+                        <button id="button-add-product-bifilife">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div id="cart-milck-blue">
+                        <img class="img4" src="./img/prays-img/bifiliv-pet.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Бифилайф 2,5%</h3>
+                    <p class="cart-text">Биопродукт ТУ 9222-001-14173891-08</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: ПЭТ-бутылка</h4>
+                        <p>Объём: 0,5л</p>
+                        <p>Срок хранения: 10 суток</p>
+                        <button id="button-add-product-bifilife-bottle">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div>
+                        <img class="img4" src="./img/prays-img/yogurt-peach.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Йогурт 2,5%</h3>
+                    <p class="cart-text">Питьевой ТУ 9222-001-00419785-14</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: бутылка</h4>
+                        <p>Объём: 0,5л</p>
+                        <p>Срок хранения: 14 суток</p>
+                        <p>Персик</p>
+                        <button id="button-add-product-yogurt">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div>
+                        <img class="img4" src="./img/prays-img/yogurt-strawberry.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Йогурт 2,5%</h3>
+                    <p class="cart-text">Питьевой ТУ 9222-001-00419785-14</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: бутылка</h4>
+                        <p>Объём: 0,5л</p>
+                        <p>Срок хранения: 14 суток</p>
+                        <p>Клубника</p>
+                        <button id="button-add-product-yogurt">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div>
+                        <img class="img4" src="./img/prays-img/yogurt-orange.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Йогурт 2,5%</h3>
+                    <p class="cart-text">Питьевой ТУ 9222-001-00419785-14</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: бутылка</h4>
+                        <p>Объём: 0,5л</p>
+                        <p>Срок хранения: 14 суток</p>
+                        <p>Апельсин</p>
+                        <button id="button-add-product-yogurt">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div>
+                        <img class="img4" src="./img/prays-img/yogurt-cereals.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Йогурт 2,5%</h3>
+                    <p class="cart-text">Питьевой ТУ 9222-001-00419785-14</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: бутылка</h4>
+                        <p>Объём: 0,5л</p>
+                        <p>Срок хранения: 14 суток</p>
+                        <p>Мюсли-злаки</p>
+                        <button id="button-add-product-yogurt">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div>
+                        <img class="img4" src="./img/prays-img/bio-yogurt.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Биойогурт 2,5%</h3>
+                    <p class="cart-text">Обогащён бифидобактериями ТУ 9222-001-00419785-14</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: бутылка</h4>
+                        <p>Объём: 0,33л</p>
+                        <p>Срок хранения: 14 суток</p>
+                        <p>Вкус: черника-злаки</p>
+                        <button id="button-add-product-bioyogurt">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div>
+                        <img class="img3" src="./img/prays-img/ryjenka.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Ряженка 2,5%</h3>
+                    <p class="cart-text">Из цельного молока ГОСТ 31455-2012</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: плёнка</h4>
+                        <p>Объём: 0,5л</p>
+                        <p>Срок хранения: 10 суток</p>
+                        <button id="button-add-product-ryazhenka">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div>
+                        <img class="img3" src="./img/prays-img/sneshek.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Снежок 2,5%</h3>
+                    <p class="cart-text">Напиток кисломолочный йогуртовый с сахаром <br> ТУ 9222-388-00419785-05</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: плёнка</h4>
+                        <p>Объём: 0,45л</p>
+                        <p>Срок хранения: 14 суток</p>
+                        <button id="button-add-product-snowball">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div>
+                        <img class="img1" src="./img/prays-img/sivorotka.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Сыворотка 2,5%</h3>
+                    <p class="cart-text">Молочная пастеризованная ТУ 9229-110-04610209-2002</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: плёнка</h4>
+                        <p>Объём: 1л</p>
+                        <p>Срок хранения: 5 суток</p>
+                        <button id="button-add-product-serum">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div id="cart-milck-blue">
+                        <img class="img1" src="./img/prays-img/oil.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Масло 72,5%</h3>
+                    <p class="cart-text">Пастеризованное ГОСТ 31450-2013</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: фольга</h4>
+                        <p>Объём:</p>
+                        <select class="select-volume" id="">
+                            <option value="170">170г</option>
+                            <option value="200">200г</option>
+                            <option value="380">380г</option>
+                        </select>
+                        <button id="button-add-product-oil">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div>
+                        <img class="img3" src="./img/prays-img/smetana-15.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Сметана 15%</h3>
+                    <p class="cart-text">Классическая ГОСТ 31452-2012</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: плёнка</h4>
+                        <p>Объём: 500мл</p>
+                        <p>Срок хранения: 14 суток</p>
+                        <button id="button-add-product-lite-blue">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div>
+                        <img class="img1" src="./img/prays-img/smetana-15-shaib.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Сметана 15%</h3>
+                    <p class="cart-text">Классическая ГОСТ 31452-2012</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: стакан</h4>
+                        <p>Объём: 200г</p>
+                        <p>Срок хранения: 14 суток</p>
+                        <button id="button-add-product-lite-blue-cup">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div>
+                        <img class="img3" src="./img/prays-img/smetana-20.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Сметана 20%</h3>
+                    <p class="cart-text">Класическая ГОСТ 31452-2012</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: плёнка</h4>
+                        <select class="select-volume" id="">
+                            <option value="200">200г</option>
+                            <option value="330">330г</option>
+                        </select>
+                        <p>Срок хранения: 14 суток</p>
+                        <button id="button-add-product-blue">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div>
+                        <img class="img1" src="./img/prays-img/smetana-20-stakan.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Сметана 20%</h3>
+                    <p class="cart-text">Класическая ГОСТ 31452-2012</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: стакан</h4>
+                        <select class="select-volume" id="">
+                            <option value="200">200г</option>
+                            <option value="330">330г</option>
+                        </select>
+                        <p>Срок хранения: 14 суток</p>
+                        <button id="button-add-product-blue-cup">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div>
+                        <img class="img1" src="./img/prays-img/tvorog-5.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Творог 5%</h3>
+                    <p class="cart-text">Традиционный ГОСТ 31453-2013</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: стакан</h4>
+                        <p>Объём: 200г</p>
+                        <p>Срок хранения: 10 суток</p>
+                        <button id="button-add-product-cheese-pink">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div>
+                        <img class="img1" src="./img/prays-img/tvorog-0.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Творог 0%</h3>
+                    <p class="cart-text">Обезжиренный ГОСТ 31453-2013</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: стакан</h4>
+                        <p>Объём: 200г</p>
+                        <p>Срок хранения: 10 суток</p>
+                        <button id="button-add-product-cheese-green">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div id="cart-milck-blue">
+                        <img class="img1" src="./img/prays-img/tvorog-5-floupak.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Творог 5%</h3>
+                    <p class="cart-text">Обезжиренный ГОСТ 31453-2013</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: флоу пак / фольга</h4>
+                        <select class="select-volume" id="">
+                            <option value="180">180г</option>
+                            <option value="200">200г</option>
+                        </select>
+                        <p>Срок хранения: 10 суток</p>
+                        <button id="button-add-product-flowpack-pink">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div>
+                        <img class="img1" src="./img/prays-img/tvorog-9-floupak.webp" alt="Картинка товара">
+                    </div>
+                    <h3>Творог 9%</h3>
+                    <p class="cart-text">Обезжиренный ГОСТ 31453-2013</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: флоу пак / фольга</h4>
+                        <select class="select-volume" id="">
+                            <option value="180">180г</option>
+                            <option value="200">200г</option>
+                        </select>
+                        <p>Срок хранения: 10 суток</p>
+                        <button id="button-add-product-flowpack-violet">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div>
+                        <img class="img5" src="./img/prays-img/Творог-с-наполнителем.png" alt="Картинка товара">
+                    </div>
+                    <h3>Творог 5%</h3>
+                    <p class="cart-text">Обезжиренный ГОСТ 31453-2013</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: стакан</h4>
+                        <p>Объём: 200г</p>
+                        <select class="select-volume" id="">
+                            <option value="Вишня">Вишня-черешня</option>
+                            <option value="Груша">Груша-ваниль</option>
+                            <option value="Клубника">Клубника-земляника</option>
+                            <option value="Смородина">Чёрная смородина</option>
+                            <option value="Карамель">Карамель</option>
+                            <option value="Ваниль">Ваниль</option>
+                        </select>
+                        <p>Срок хранения: 14 суток</p>
+                        <button id="button-add-product-cheese-filler">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div>
+                        <img id="img-cottage-cheese" src="./img/prays-img/Сыр-брынза.png" alt="Картинка товара">
+                    </div>
+                    <h3>Брынза 40%</h3>
+                    <p class="cart-text">Сыр рассольный ГОСТ Р 53421-2009</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: барьерная плёнка под вакуумом</h4>
+                        <p>Срок хранения: 35 суток</p>
+                        <button id="button-add-product-brynza">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div>
+                        <img id="img-cottage-cheese" src="./img/prays-img/Сыр-фермерский.png" alt="Картинка товара">
+                    </div>
+                    <h3>Фермерский 30%</h3>
+                    <p class="cart-text">Сыр ТУ 9225-007-49464828-05</p>
+                    <div class="cart-section-text">
+                        <h4>Упаковка: барьерная плёнка под вакуумом</h4>
+                        <p>Срок хранения: 35 суток</p>
+                        <button id="button-add-product-farm">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="orders-section">
+            <div>
+
+            </div>
+        </div>
+        <div id="invoice-section">
+            <div id="header-section-invoice">
+                <p class="text-header-invoice">Накладная № б/н от "</p>
+                <input type="number" id="date-invoice">
+                <p class="text-header-invoice">"</p>
+                <input type="text" id="date2-invoice">
+                <p class="text-header-invoice">2023г.</p>
+            </div>
+            <div id="invoice-panel-list">
+                <div class="table-block-column-1">
+                    <div class="table-block-row-1">Наименование продукции</div>
+                    <div class="table-block-1">Бифилайф 2,5%, бутылка 0,5л</div>
+                    <div class="table-block-1">Йогурт 2,5%,малина, бутылка 0,5л</div>
+                    <div class="table-block-1">Йогурт 2,5%,мюсли-злаки, бутылка 0,5л</div>
+                    <div class="table-block-1">Йогурт 2,5%,персик, бутылка 0,5л</div>
+                    <div class="table-block-1">Йогурт 2,5%,клубника, бутылка 0,5л</div>
+                    <div class="table-block-1">Биойогурт 2,5%,черника-злаки, бутылка 0,5л</div>
+                    <div class="table-block-1">Кефир 2,5% п/э пл. 0.9л</div>
+                    <div class="table-block-1">Кефир 2,5% пэт. бутылка 0.9л</div>
+                    <div class="table-block-1">Ряженка 2,5% п/л 0,5л</div>
+                    <div class="table-block-1">Снежок 2,5% п/э 0,45л</div>
+                    <div class="table-block-1">Масло сливочное "Крестьянское" 72,5%, 170гр</div>
+                    <div class="table-block-1">Масло сливочное 72,5%, вес По 1кг</div>
+                    <div class="table-block-1">Масло сливочное 82,5% вес. 1кг фермерское</div>
+                    <div class="table-block-1">Молоко питьевое 2,5%, п/э пл. 0,9</div>
+                    <div class="table-block-1">Молоко питьевое 2,5%, бутылка 0,9</div>
+                    <div class="table-block-1">Молоко питьевое 3,2%, п/э пл. 1л</div>
+                    <div class="table-block-1">Молоко питьевое 3,2%, бутылка 0,9</div>
+                    <div class="table-block-1">Сметана 20%, ст. п/зап 200гр</div>
+                    <div class="table-block-1">Сметана 20%, ст. п/зап 330гр</div>
+                    <div class="table-block-1">Сметана 20%, плёнка 450гр</div>
+                    <div class="table-block-1">Сметана 20%, вес. 1кг</div>
+                    <div class="table-block-1">Творог жир. 5% с наполнителем груша-ваниль стакан 200гр</div>
+                    <div class="table-block-1">Творог жир. 5% с наполнителем клубника-земляника стакан 200гр</div>
+                    <div class="table-block-1">Творог жир. 5% с наполнителем чёрная смородина стакан 200гр</div>
+                    <div class="table-block-1">Творог жир. 5% с наполнителем абрикос стакан 200гр</div>
+                    <div class="table-block-1">Творог жир. 5% с наполнителем киви стакан 200гр</div>
+                    <div class="table-block-1">Творог 5%, флоу пак 200гр</div>
+                    <div class="table-block-1">Творог 5%, фас. Стакан 180гр</div>
+                    <div class="table-block-1">Творог 9%, флоу пак 200гр</div>
+                    <div class="table-block-1">Творог 5%, вес. 1кг</div>
+                    <div class="table-block-1">Сыр "Брынза" 40% фас.</div>
+                    <div class="table-block-1">Сыр "Фермерский" 30%</div>
+                    <div class="table-block-1">Сыр "Чечил" 45% Фас</div>
+                    <div class="table-block-1">Сыр "Сулугуни" 45% Фас</div>
+                    <div class="table-block-1">Сыр "Российский" 50% вес.</div>
+                    <div class="table-block-1-1">Итого</div>
+                </div>
+                <div class="table-block-column-2">
+                    <div class="table-block-row-2">ед.изм</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">кг</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">кг</div>
+                    <div class="table-block-2">кг</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">кг</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">кг</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">кг</div>
+                    <div class="table-block-2">шт.</div>
+                    <div class="table-block-2">кг</div>
+                    <div class="table-block-2">кг</div>
+                    <div class="table-block-2">кг</div>
+                    <div class="table-block-2">кг</div>
+                    <div class="table-block-1-2"></div>
+                </div>
+                <div class="table-block-column-3">
+                    <div class="table-block-row-3">цена(руб.)</div>
+                    <div class="table-block-3" id="price-string-1">57.00</div>
+                    <div class="table-block-3" id="price-string-2">57.00</div>
+                    <div class="table-block-3" id="price-string-3">57.00</div>
+                    <div class="table-block-3" id="price-string-4">57.00</div>
+                    <div class="table-block-3" id="price-string-5">57.00</div>
+                    <div class="table-block-3" id="price-string-6">57.00</div>
+                    <div class="table-block-3" id="price-string-7">63.00</div>
+                    <div class="table-block-3" id="price-string-8">75.00</div>
+                    <div class="table-block-3" id="price-string-9">44.00</div>
+                    <div class="table-block-3" id="price-string-10">44.00</div>
+                    <div class="table-block-3" id="price-string-11">129.00</div>
+                    <div class="table-block-3" id="price-string-12">667.00</div>
+                    <div class="table-block-3" id="price-string-13">600.00</div>
+                    <div class="table-block-3" id="price-string-14">54.00</div>
+                    <div class="table-block-3" id="price-string-15">67.00</div>
+                    <div class="table-block-3" id="price-string-16">69.00</div>
+                    <div class="table-block-3" id="price-string-17">73.00</div>
+                    <div class="table-block-3" id="price-string-18">55.00</div>
+                    <div class="table-block-3" id="price-string-19">85.00</div>
+                    <div class="table-block-3" id="price-string-20">98.00</div>
+                    <div class="table-block-3" id="price-string-21">205.00</div>
+                    <div class="table-block-3" id="price-string-22">82.00</div>
+                    <div class="table-block-3" id="price-string-23">82.00</div>
+                    <div class="table-block-3" id="price-string-24">82.00</div>
+                    <div class="table-block-3" id="price-string-25">82.00</div>
+                    <div class="table-block-3" id="price-string-26">82.00</div>
+                    <div class="table-block-3" id="price-string-27">62.00</div>
+                    <div class="table-block-3" id="price-string-28">72.00</div>
+                    <div class="table-block-3" id="price-string-29">64.00</div>
+                    <div class="table-block-3" id="price-string-30">275.00</div>
+                    <div class="table-block-3" id="price-string-31">520.00</div>
+                    <div class="table-block-3" id="price-string-32">520.00</div>
+                    <div class="table-block-3" id="price-string-33">704.00</div>
+                    <div class="table-block-3" id="price-string-34">704.00</div>
+                    <div class="table-block-3" id="price-string-35">640.00</div>
+                    <div class="table-block-1-3"></div>
+                </div>
+                <div class="table-block-column-4">
+                    <div class="table-block-row-4">кол-во</div>
+                    <input type="number" class="input-table" id="strock-col-vo-1">
+                    <input type="number" class="input-table" id="strock-col-vo-2">
+                    <input type="number" class="input-table" id="strock-col-vo-3">
+                    <input type="number" class="input-table" id="strock-col-vo-4">
+                    <input type="number" class="input-table" id="strock-col-vo-5">
+                    <input type="number" class="input-table" id="strock-col-vo-6">
+                    <input type="number" class="input-table" id="strock-col-vo-7">
+                    <input type="number" class="input-table" id="strock-col-vo-8">
+                    <input type="number" class="input-table" id="strock-col-vo-9">
+                    <input type="number" class="input-table" id="strock-col-vo-10">
+                    <input type="number" class="input-table" id="strock-col-vo-11">
+                    <input type="number" class="input-table" id="strock-col-vo-12">
+                    <input type="number" class="input-table" id="strock-col-vo-13">
+                    <input type="number" class="input-table" id="strock-col-vo-14">
+                    <input type="number" class="input-table" id="strock-col-vo-15">
+                    <input type="number" class="input-table" id="strock-col-vo-16">
+                    <input type="number" class="input-table" id="strock-col-vo-17">
+                    <input type="number" class="input-table" id="strock-col-vo-18">
+                    <input type="number" class="input-table" id="strock-col-vo-19">
+                    <input type="number" class="input-table" id="strock-col-vo-20">
+                    <input type="number" class="input-table" id="strock-col-vo-21">
+                    <input type="number" class="input-table" id="strock-col-vo-22">
+                    <input type="number" class="input-table" id="strock-col-vo-23">
+                    <input type="number" class="input-table" id="strock-col-vo-24">
+                    <input type="number" class="input-table" id="strock-col-vo-25">
+                    <input type="number" class="input-table" id="strock-col-vo-26">
+                    <input type="number" class="input-table" id="strock-col-vo-27">
+                    <input type="number" class="input-table" id="strock-col-vo-28">
+                    <input type="number" class="input-table" id="strock-col-vo-29">
+                    <input type="number" class="input-table" id="strock-col-vo-30">
+                    <input type="number" class="input-table" id="strock-col-vo-31">
+                    <input type="number" class="input-table" id="strock-col-vo-32">
+                    <input type="number" class="input-table" id="strock-col-vo-33">
+                    <input type="number" class="input-table" id="strock-col-vo-34">
+                    <input type="number" class="input-table" id="strock-col-vo-35">
+                    <div class="table-block-1-4"></div>
+                </div>
+                <div class="table-block-column-5">
+                    <div class="table-block-row-5">сумма</div>
+                    <div type="number" class="input-table-summ" id="sum-strock-1"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-2"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-3"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-4"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-5"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-6"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-7"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-8"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-9"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-10"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-11"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-12"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-13"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-14"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-15"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-16"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-17"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-18"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-19"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-20"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-21"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-22"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-23"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-24"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-25"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-26"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-27"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-28"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-29"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-30"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-31"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-32"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-33"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-34"></div>
+                    <div type="number" class="input-table-summ" id="sum-strock-35"></div>
+                    <div id="table-block-summ"></div>
+                </div>
+            </div>
+            <button id="button-calculate">Расчитать</button>
+        </div>
+        <div id="stock-section">
+            <div>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="footer-section">
+            <p id="footer-text-contacts">Наши контакты: 8-988-000-00-00</p>
+        </div>
+    </footer>
+    <script type="module" src="./row-script.js"></script>
+</body>
+
+</html>
