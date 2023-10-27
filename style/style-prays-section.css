@@ -6,6 +6,14 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
 }
+.header-prays {
+    text-align: center;
+}
+.header-prays p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+}
 #basket {
     width: 40px;
     position: fixed;
@@ -110,6 +118,9 @@
     color: aliceblue;
     font-size: 25px;
     cursor: context-menu;
+}
+.text-params {
+    display: inline-flex;
 }
 .cart-section-text {
     cursor: context-menu;

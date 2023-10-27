@@ -15,6 +15,6 @@ export function calculateSumm() {
         } else {
             document.getElementById('table-block-summ').innerText = summ;
             return;
-        }
+        };
     };
 };
