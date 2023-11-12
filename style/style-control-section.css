@@ -1,0 +1,59 @@
+#control-section {
+    text-align: center;
+}
+
+#section-control {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+}
+
+#header-control-section {
+    text-align: center;
+    font-size: 40px;
+}
+
+#left-section-control {
+    width: 95%;
+    height: 95%;
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+}
+
+#right-section-control {
+    width: 95%;
+    height: 95%;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.input-user-data {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: block;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.text-user {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.button-control-panel {
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #176fd7;
+}
+
+#select-user {
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+}

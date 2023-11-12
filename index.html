@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./style/style-prays-section.css">
     <link rel="stylesheet" href="./style/order-panel.css">
     <link rel="stylesheet" href="./style/style-strock-section.css">
+    <link rel="stylesheet" href="./style/style-control-section.css">
 </head>
 
 <body>
@@ -34,6 +35,9 @@
                 <div id="stock-panel">
                     <p id="strock-panel-text">Склад</p>
                 </div>
+                <div id="control-panel">
+                    <p id="control-panel-text">Управление</p>
+                </div>
             </div>
         </div>
     </header>
@@ -46,27 +50,21 @@
         </div>
     </div>
     <section>
-        <div id="autorization-section">
-            <p id="autorization-section-text">Введите логин и пароль</p>
-            <input class="input-autorization" id="input-login-add" type="text" placeholder="Логин">
-            <input class="input-autorization" id="input-password-add" type="password" placeholder="Пароль">
-            <div id="button-autorization">Войти</div>
-        </div>
-    </section>
-    <section>
         <div id="row-section">
             <div>
                 <p class="header-row-section">Натуральные молочные продукты</p>
             </div>
         </div>
         <div id="prays-section">
-            <div class="header-prays"><p>Наша продукция</p></div>
+            <div class="header-prays">
+                <p>Наша продукция</p>
+            </div>
             <div id="basket"><img id="basket-img" src="./img/Basket.png" alt="картинка корзины">
                 <div id="counter-product">0</div>
             </div>
             <div id="block-basket">
                 <div>
-                    <h3>Список-заказа</h3>
+                    <h2>Список-заказа</h2>
                     <button id="get-product-list">Заказать</button>
                 </div>
                 <div id="block-basket-list">
@@ -81,7 +79,7 @@
                     <h3>Молоко 2,5%</h3>
                     <p class="cart-text">Пастеризованное ГОСТ 31450-2013</p>
                     <div class="cart-section-text" id="milk-blue">
-                        <h4>Упаковка: плёнка</h4>
+                        <h4 class="cart-package">Упаковка: плёнка</h4>
                         <p class="text-params">Объём:</p>
                         <select class="select-volume">
                             <option value="0.5">0.5л</option>
@@ -101,8 +99,9 @@
                     <h3>Молоко 2,5%</h3>
                     <p class="cart-text">Пастеризованное ГОСТ 31450-2013</p>
                     <div class="cart-section-text" id="milk-blue-pet">
-                        <h4>Упаковка: ПЭТ-бутылка</h4>
-                        <p>Объём: 0,9л</p>
+                        <h4 class="cart-package">Упаковка: ПЭТ-бутылка</h4>
+                        <p class="text-params">Объём:</p>
+                        <p class="cart-volume">0,9л</p>
                         <p>Срок хранения: 10 суток</p>
                         <button class="button-add" data-id="milk-blue-pet">
                             В корзину
@@ -115,8 +114,8 @@
                     </div>
                     <h3>Кефир 2,5%</h3>
                     <p class="cart-text">Натуральный ГОСТ 311454-2012</p>
-                    <div class="cart-section-text"  id="kefir">
-                        <h4>Упаковка: плёнка</h4>
+                    <div class="cart-section-text" id="kefir">
+                        <h4 class="cart-package">Упаковка: плёнка</h4>
                         <p class="text-params">Объём:</p>
                         <select class="select-volume">
                             <option value="0.5">0.5л</option>
@@ -135,9 +134,10 @@
                     </div>
                     <h3>Кефир 2,5%</h3>
                     <p class="cart-text">Натуральный ГОСТ 311454-2012</p>
-                    <div class="cart-section-text"  id="kefir-pet">
-                        <h4>Упаковка: ПЭТ-бутылка</h4>
-                        <p>Объём: 0,9л</p>
+                    <div class="cart-section-text" id="kefir-pet">
+                        <h4 class="cart-package">Упаковка: ПЭТ-бутылка</h4>
+                        <p class="text-params">Объём:</p>
+                        <p class="cart-volume">0,9л</p>
                         <p>Срок хранения: 14 суток</p>
                         <button class="button-add" data-id="kefir-pet">
                             В корзину
@@ -150,10 +150,10 @@
                     </div>
                     <h3>Молоко 3,2-4,5%</h3>
                     <p class="cart-text">Пастеризованное ГОСТ 31450-2013</p>
-                    <div class="cart-section-text"  id="milk-red">
-                        <h4>Упаковка: плёнка</h4>
+                    <div class="cart-section-text" id="milk-red">
+                        <h4 class="cart-package">Упаковка: плёнка</h4>
                         <p class="text-params">Процент:</p>
-                        <select class="select-volume">
+                        <select class="select-percent">
                             <option value="3.2">3.2%</option>
                             <option value="4.5">4.5%</option>
                         </select>
@@ -176,10 +176,11 @@
                     <h3>Молоко 3,2-4,5%</h3>
                     <p class="cart-text">Пастеризованное ГОСТ 31450-2013</p>
                     <div class="cart-section-text" id="milk-red-pet">
-                        <h4>Упаковка: ПЭТ-бутылка</h4>
-                        <p>Объём: 0,9л</p>
+                        <h4 class="cart-package">Упаковка: ПЭТ-бутылка</h4>
+                        <p class="text-params">Объём:</p>
+                        <p class="cart-volume">0,9л</p>
                         <p class="text-params">Процент:</p>
-                        <select class="select-volume">
+                        <select class="select-percent">
                             <option value="3.2">3,2%</option>
                             <option value="4.5">4,5%</option>
                         </select>
@@ -196,8 +197,9 @@
                     <h3>Бифилайф 2,5%</h3>
                     <p class="cart-text">Биопродукт ТУ 9222-001-14173891-08</p>
                     <div class="cart-section-text" id="bifiliv">
-                        <h4>Упаковка: плёнка</h4>
-                        <p>Объём: 0,5л</p>
+                        <h4 class="cart-package">Упаковка: плёнка</h4>
+                        <p class="text-params">Объём:</p>
+                        <p class="cart-volume">0,5л</p>
                         <p>Срок хранения: 10 суток</p>
                         <button class="button-add" data-id="bifiliv">
                             В корзину
@@ -211,8 +213,9 @@
                     <h3>Бифилайф 2,5%</h3>
                     <p class="cart-text">Биопродукт ТУ 9222-001-14173891-08</p>
                     <div class="cart-section-text" id="bifiliv-pet">
-                        <h4>Упаковка: ПЭТ-бутылка</h4>
-                        <p>Объём: 0,5л</p>
+                        <h4 class="cart-package">Упаковка: ПЭТ-бутылка</h4>
+                        <p class="text-params">Объём:</p>
+                        <p class="cart-volume">0,5л</p>
                         <p>Срок хранения: 10 суток</p>
                         <button class="button-add" data-id="bifiliv-pet">
                             В корзину
@@ -226,10 +229,11 @@
                     <h3>Йогурт 2,5%</h3>
                     <p class="cart-text">Питьевой ТУ 9222-001-00419785-14</p>
                     <div class="cart-section-text" id="yogurt-peach">
-                        <h4>Упаковка: бутылка</h4>
-                        <p>Объём: 0,5л</p>
+                        <h4 class="cart-package">Упаковка: бутылка</h4>
+                        <p class="text-params">Объём:</p>
+                        <p class="cart-volume">0,5л</p>
                         <p>Срок хранения: 14 суток</p>
-                        <p>Персик</p>
+                        <p class="cart-filler">Персик</p>
                         <button class="button-add" data-id="yogurt-peach">
                             В корзину
                         </button>
@@ -242,10 +246,11 @@
                     <h3>Йогурт 2,5%</h3>
                     <p class="cart-text">Питьевой ТУ 9222-001-00419785-14</p>
                     <div class="cart-section-text" id="yogurt-strawberry">
-                        <h4>Упаковка: бутылка</h4>
-                        <p>Объём: 0,5л</p>
+                        <h4 class="cart-package">Упаковка: бутылка</h4>
+                        <p class="text-params">Объём:</p>
+                        <p class="cart-volume">0,5л</p>
                         <p>Срок хранения: 14 суток</p>
-                        <p>Клубника</p>
+                        <p class="cart-filler">Клубника</p>
                         <button class="button-add" data-id="yogurt-strawberry">
                             В корзину
                         </button>
@@ -258,10 +263,11 @@
                     <h3>Йогурт 2,5%</h3>
                     <p class="cart-text">Питьевой ТУ 9222-001-00419785-14</p>
                     <div class="cart-section-text" id="yogurt-orange">
-                        <h4>Упаковка: бутылка</h4>
-                        <p>Объём: 0,5л</p>
+                        <h4 class="cart-package">Упаковка: бутылка</h4>
+                        <p class="text-params">Объём:</p>
+                        <p class="cart-volume">0,5л</p>
                         <p>Срок хранения: 14 суток</p>
-                        <p>Апельсин</p>
+                        <p class="cart-filler">Апельсин</p>
                         <button class="button-add" data-id="yogurt-orange">
                             В корзину
                         </button>
@@ -274,10 +280,11 @@
                     <h3>Йогурт 2,5%</h3>
                     <p class="cart-text">Питьевой ТУ 9222-001-00419785-14</p>
                     <div class="cart-section-text" id="yogurt-cereals">
-                        <h4>Упаковка: бутылка</h4>
-                        <p>Объём: 0,5л</p>
+                        <h4 class="cart-package">Упаковка: бутылка</h4>
+                        <p class="text-params">Объём:</p>
+                        <p class="cart-volume">0,5л</p>
                         <p>Срок хранения: 14 суток</p>
-                        <p>Мюсли-злаки</p>
+                        <p class="cart-filler">Мюсли-злаки</p>
                         <button class="button-add" data-id="yogurt-cereals">
                             В корзину
                         </button>
@@ -290,10 +297,11 @@
                     <h3>Биойогурт 2,5%</h3>
                     <p class="cart-text">Обогащён бифидобактериями ТУ 9222-001-00419785-14</p>
                     <div class="cart-section-text" id="bio-yogurt">
-                        <h4>Упаковка: бутылка</h4>
-                        <p>Объём: 0,33л</p>
+                        <h4 class="cart-package">Упаковка: бутылка</h4>
+                        <p class="text-params">Объём:</p>
+                        <p class="cart-volume">0,33л</p>
                         <p>Срок хранения: 14 суток</p>
-                        <p>Вкус: черника-злаки</p>
+                        <p class="cart-filler">Черника-злаки</p>
                         <button class="button-add" data-id="bio-yogurt">
                             В корзину
                         </button>
@@ -306,8 +314,9 @@
                     <h3>Ряженка 2,5%</h3>
                     <p class="cart-text">Из цельного молока ГОСТ 31455-2012</p>
                     <div class="cart-section-text" id="ryjenka">
-                        <h4>Упаковка: плёнка</h4>
-                        <p>Объём: 0,5л</p>
+                        <h4 class="cart-package">Упаковка: плёнка</h4>
+                        <p class="text-params">Объём:</p>
+                        <p class="cart-volume">0,5л</p>
                         <p>Срок хранения: 10 суток</p>
                         <button class="button-add" data-id="ryjenka">
                             В корзину
@@ -321,8 +330,9 @@
                     <h3>Снежок 2,5%</h3>
                     <p class="cart-text">Напиток кисломолочный йогуртовый с сахаром <br> ТУ 9222-388-00419785-05</p>
                     <div class="cart-section-text" id="sneshek">
-                        <h4>Упаковка: плёнка</h4>
-                        <p>Объём: 0,45л</p>
+                        <h4 class="cart-package">Упаковка: плёнка</h4>
+                        <p class="text-params">Объём:</p>
+                        <p class="cart-volume">0,45л</p>
                         <p>Срок хранения: 14 суток</p>
                         <button class="button-add" data-id="sneshek">
                             В корзину
@@ -336,8 +346,9 @@
                     <h3>Сыворотка 2,5%</h3>
                     <p class="cart-text">Молочная пастеризованная ТУ 9229-110-04610209-2002</p>
                     <div class="cart-section-text" id="sivorotka">
-                        <h4>Упаковка: плёнка</h4>
-                        <p>Объём: 1л</p>
+                        <h4 class="cart-package">Упаковка: плёнка</h4>
+                        <p class="text-params">Объём:</p>
+                        <p class="cart-volume">1л</p>
                         <p>Срок хранения: 5 суток</p>
                         <button class="button-add" data-id="sivorotka">
                             В корзину
@@ -351,9 +362,9 @@
                     <h3>Масло 72,5%</h3>
                     <p class="cart-text">Пастеризованное ГОСТ 31450-2013</p>
                     <div class="cart-section-text" id="oil">
-                        <h4>Упаковка: фольга</h4>
+                        <h4 class="cart-package">Упаковка: фольга</h4>
                         <p class="text-params">Объём:</p>
-                        <select class="select-volume" id="">
+                        <select class="select-volume">
                             <option value="170">170г</option>
                             <option value="200">200г</option>
                             <option value="380">380г</option>
@@ -370,8 +381,9 @@
                     <h3>Сметана 15%</h3>
                     <p class="cart-text">Классическая ГОСТ 31452-2012</p>
                     <div class="cart-section-text" id="smetana-15">
-                        <h4>Упаковка: плёнка</h4>
-                        <p>Объём: 500мл</p>
+                        <h4 class="cart-package">Упаковка: плёнка</h4>
+                        <p class="text-params">Объём:</p>
+                        <p class="cart-volume">500мл</p>
                         <p>Срок хранения: 14 суток</p>
                         <button class="button-add" data-id="smetana-15">
                             В корзину
@@ -385,8 +397,9 @@
                     <h3>Сметана 15%</h3>
                     <p class="cart-text">Классическая ГОСТ 31452-2012</p>
                     <div class="cart-section-text" id="smetana-15-shaib">
-                        <h4>Упаковка: стакан</h4>
-                        <p>Объём: 200г</p>
+                        <h4 class="cart-package">Упаковка: стакан</h4>
+                        <p class="text-params">Объём:</p>
+                        <p class="cart-volume">200г</p>
                         <p>Срок хранения: 14 суток</p>
                         <button class="button-add" data-id="smetana-15-shaib">
                             В корзину
@@ -400,12 +413,9 @@
                     <h3>Сметана 20%</h3>
                     <p class="cart-text">Класическая ГОСТ 31452-2012</p>
                     <div class="cart-section-text" id="smetana-20">
-                        <h4>Упаковка: плёнка</h4>
+                        <h4 class="cart-package">Упаковка: плёнка</h4>
                         <p class="text-params">Объём:</p>
-                        <select class="select-volume">
-                            <option value="200">200г</option>
-                            <option value="330">330г</option>
-                        </select>
+                        <p class="cart-volume">500мл</p>
                         <p>Срок хранения: 14 суток</p>
                         <button class="button-add" data-id="smetana-20">
                             В корзину
@@ -419,7 +429,7 @@
                     <h3>Сметана 20%</h3>
                     <p class="cart-text">Класическая ГОСТ 31452-2012</p>
                     <div class="cart-section-text" id="smetana-20-stakan">
-                        <h4>Упаковка: стакан</h4>
+                        <h4 class="cart-package">Упаковка: стакан</h4>
                         <p class="text-params">Объём:</p>
                         <select class="select-volume">
                             <option value="200">200г</option>
@@ -438,8 +448,9 @@
                     <h3>Творог 5%</h3>
                     <p class="cart-text">Традиционный ГОСТ 31453-2013</p>
                     <div class="cart-section-text" id="tvorog-5">
-                        <h4>Упаковка: стакан</h4>
-                        <p>Объём: 200г</p>
+                        <h4 class="cart-package">Упаковка: стакан</h4>
+                        <p class="text-params">Объём:</p>
+                        <p class="cart-volume">200г</p>
                         <p>Срок хранения: 10 суток</p>
                         <button class="button-add" data-id="tvorog-5">
                             В корзину
@@ -453,8 +464,9 @@
                     <h3>Творог 0%</h3>
                     <p class="cart-text">Обезжиренный ГОСТ 31453-2013</p>
                     <div class="cart-section-text" id="tvorog-0">
-                        <h4>Упаковка: стакан</h4>
-                        <p>Объём: 200г</p>
+                        <h4 class="cart-package">Упаковка: стакан</h4>
+                        <p class="text-params">Объём:</p>
+                        <p class="cart-volume">200г</p>
                         <p>Срок хранения: 10 суток</p>
                         <button class="button-add" data-id="tvorog-0">
                             В корзину
@@ -468,9 +480,9 @@
                     <h3>Творог 5%</h3>
                     <p class="cart-text">Обезжиренный ГОСТ 31453-2013</p>
                     <div class="cart-section-text">
-                        <h4>Упаковка: флоу пак / фольга</h4>
+                        <h4 class="cart-package">Упаковка: флоу пак</h4>
                         <p class="text-params">Объём:</p>
-                        <select class="select-volume" id="tvorog-5-floupak">
+                        <select class="select-volume">
                             <option value="180">180г</option>
                             <option value="200">200г</option>
                         </select>
@@ -487,9 +499,9 @@
                     <h3>Творог 9%</h3>
                     <p class="cart-text">Обезжиренный ГОСТ 31453-2013</p>
                     <div class="cart-section-text">
-                        <h4>Упаковка: флоу пак / фольга</h4>
+                        <h4 class="cart-package">Упаковка: флоу пак</h4>
                         <p class="text-params">Объём:</p>
-                        <select class="select-volume" id="tvorog-9-floupak">
+                        <select class="select-volume">
                             <option value="180">180г</option>
                             <option value="200">200г</option>
                         </select>
@@ -506,16 +518,18 @@
                     <h3>Творог 5%</h3>
                     <p class="cart-text">Обезжиренный ГОСТ 31453-2013</p>
                     <div class="cart-section-text" id="tvorog-filler">
-                        <h4>Упаковка: стакан</h4>
-                        <p>Объём: 200г</p>
-                        <p class="text-params">Вкус:</p>
-                        <select class="select-volume">
-                            <option value="Вишня">Вишня-черешня</option>
-                            <option value="Груша">Груша-ваниль</option>
-                            <option value="Клубника">Клубника-земляника</option>
-                            <option value="Смородина">Чёрная смородина</option>
+                        <h4 class="cart-package">Упаковка: стакан</h4>
+                        <p class="text-params">Объём:</p>
+                        <p class="cart-volume">200г</p><br>
+                        <p class="text-params">Наполнитель:</p>
+                        <select class="select-filler">
+                            <option value="Вишня-черешня">Вишня-черешня</option>
+                            <option value="Груша-ваниль">Груша-ваниль</option>
+                            <option value="Клубника-земляника">Клубника-земляника</option>
+                            <option value="Чёрная смородина">Чёрная смородина</option>
                             <option value="Карамель">Карамель</option>
                             <option value="Ваниль">Ваниль</option>
+                            <option value="Киви">Киви</option>
                         </select>
                         <p>Срок хранения: 14 суток</p>
                         <button class="button-add" data-id="tvorog-filler">
@@ -530,7 +544,7 @@
                     <h3>Брынза 40%</h3>
                     <p class="cart-text">Сыр рассольный ГОСТ Р 53421-2009</p>
                     <div class="cart-section-text" id="brinza">
-                        <h4>Упаковка: барьерная плёнка под вакуумом</h4>
+                        <h4 class="cart-package">Упаковка: барьерная плёнка под вакуумом</h4>
                         <p>Срок хранения: 35 суток</p>
                         <button class="button-add" data-id="brinza">
                             В корзину
@@ -544,7 +558,7 @@
                     <h3>Фермерский 30%</h3>
                     <p class="cart-text">Сыр ТУ 9225-007-49464828-05</p>
                     <div class="cart-section-text" id="craft">
-                        <h4>Упаковка: барьерная плёнка под вакуумом</h4>
+                        <h4 class="cart-package">Упаковка: барьерная плёнка под вакуумом</h4>
                         <p>Срок хранения: 35 суток</p>
                         <button class="button-add" data-id="craft">
                             В корзину
@@ -771,7 +785,297 @@
         <div id="stock-section">
             <div id="header-strock">Склад</div>
             <div id="section-strock">
-                
+                <div class="table-block-strock-1" id="">
+                    <div class="table-block-row-strock-1">Наименование продукции</div>
+                    <div class="table-block-strock-1">Молоко питьевое 2,5%, п/э пл. 0,5л</div>
+                    <div class="table-block-strock-1">Молоко питьевое 2,5%, п/э пл. 0,9л</div>
+                    <div class="table-block-strock-1">Молоко питьевое 2,5%, п/э пл. 1л</div>
+                    <div class="table-block-strock-1">Молоко питьевое 2,5%, бутылка 0,9л</div>
+                    <div class="table-block-strock-1">Кефир 2,5% п/э пл. 0,5л</div>
+                    <div class="table-block-strock-1">Кефир 2,5% п/э пл. 0.9л</div>
+                    <div class="table-block-strock-1">Кефир 2,5% п/э пл. 1л</div>
+                    <div class="table-block-strock-1">Кефир 2,5% пэт. бутылка 0.9л</div>
+                    <div class="table-block-strock-1">Молоко питьевое 3,2%, п/э пл. 0,5л</div>
+                    <div class="table-block-strock-1">Молоко питьевое 3,2%, п/э пл. 0,9л</div>
+                    <div class="table-block-strock-1">Молоко питьевое 3,2%, п/э пл. 1л</div>
+                    <div class="table-block-strock-1">Молоко питьевое 4,5%, п/э пл. 0.5л</div>
+                    <div class="table-block-strock-1">Молоко питьевое 4,5%, п/э пл. 0,9л</div>
+                    <div class="table-block-strock-1">Молоко питьевое 4,5%, п/э пл. 1л</div>
+                    <div class="table-block-strock-1">Молоко питьевое 3,2%, бутылка 0,9л</div>
+                    <div class="table-block-strock-1">Молоко питьевое 4,5%, бутылка 0,9л</div>
+                    <div class="table-block-strock-1">Бифилайф 2,5%, бутылка 0,5л</div>
+                    <div class="table-block-strock-1">Йогурт 2,5%,малина, бутылка 0,5л</div>
+                    <div class="table-block-strock-1">Йогурт 2,5%,мюсли-злаки, бутылка 0,5л</div>
+                    <div class="table-block-strock-1">Йогурт 2,5%,персик, бутылка 0,5л</div>
+                    <div class="table-block-strock-1">Йогурт 2,5%,клубника, бутылка 0,5л</div>
+                    <div class="table-block-strock-1">Биойогурт 2,5%,черника-злаки, бутылка 0,5л</div>
+                    <div class="table-block-strock-1">Ряженка 2,5% п/л 0,5л</div>
+                    <div class="table-block-strock-1">Снежок 2,5% п/э 0,45л</div>
+                    <div class="table-block-strock-1">Сыворотка 2,5% п/л 1л</div>
+                    <div class="table-block-strock-1">Масло сливочное "Крестьянское" 72,5%, 170гр</div>
+                    <div class="table-block-strock-1">Масло сливочное "Крестьянское" 72,5%, 200гр</div>
+                    <div class="table-block-strock-1">Масло сливочное "Крестьянское" 72,5%, 380гр</div>
+                    <div class="table-block-strock-1">Масло сливочное 72,5%, вес По 1кг</div>
+                    <div class="table-block-strock-1">Масло сливочное 82,5% вес. 1кг фермерское</div>
+                    <div class="table-block-strock-1">Сметана 20%, ст. п/зап 200гр</div>
+                    <div class="table-block-strock-1">Сметана 20%, ст. п/зап 330гр</div>
+                    <div class="table-block-strock-1">Сметана 20%, плёнка 450гр</div>
+                    <div class="table-block-strock-1">Сметана 20%, вес. 1кг</div>
+                    <div class="table-block-strock-1">Творог жир. 5% с наполнителем груша-ваниль стакан 200гр</div>
+                    <div class="table-block-strock-1">Творог жир. 5% с наполнителем клубника-земляника стакан 200гр
+                    </div>
+                    <div class="table-block-strock-1">Творог жир. 5% с наполнителем чёрная смородина стакан 200гр</div>
+                    <div class="table-block-strock-1">Творог жир. 5% с наполнителем абрикос стакан 200гр</div>
+                    <div class="table-block-strock-1">Творог жир. 5% с наполнителем киви стакан 200гр</div>
+                    <div class="table-block-strock-1">Творог 5%, флоу пак 180гр</div>
+                    <div class="table-block-strock-1">Творог 5%, флоу пак 200гр</div>
+                    <div class="table-block-strock-1">Творог 5%, фас. Стакан 180гр</div>
+                    <div class="table-block-strock-1">Творог 9%, флоу пак 180гр</div>
+                    <div class="table-block-strock-1">Творог 9%, флоу пак 200гр</div>
+                    <div class="table-block-strock-1">Творог 5%, вес. 1кг</div>
+                    <div class="table-block-strock-1">Сыр "Брынза" 40% фас.</div>
+                    <div class="table-block-strock-1">Сыр "Фермерский" 30%</div>
+                    <div class="table-block-strock-1">Сыр "Чечил" 45% Фас</div>
+                    <div class="table-block-strock-1">Сыр "Сулугуни" 45% Фас</div>
+                    <div class="table-block-strock-1">Сыр "Российский" 50% вес.</div>
+                    <div class="table-block-strock-1-1">Итого</div>
+                </div>
+                <div class="table-block-strock-2" id="">
+                    <div class="table-block-row-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                    <div class="table-block-strock-2"></div>
+                </div>
+                <div class="table-block-strock-3" id="">
+                    <div class="table-block-row-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                    <div class="table-block-strock-3"></div>
+                </div>
+                <div class="table-block-strock-4" id="">
+                    <div class="table-block-row-strock-4"></div>
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <input type="number" id="" class="table-block-strock-4">
+                    <div class="table-block-strock-3"></div>
+                </div>
+                <div class="table-block-strock-5" id="">
+                    <div class="table-block-row-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                    <div class="table-block-strock-5"></div>
+                </div>
+            </div>
+        </div>
+        <div id="control-section">
+            <p id="header-control-section">Управление Пользователями</p>
+            <select id="select-user">
+                <option value=""></option>
+            </select>
+            <div id="section-control">
+                <div id="left-section-control">
+                    <p class="text-user">Маршрут:</p>
+                    <input class="input-user-data" type="text" id="" placeholder="Маршрут">
+                    <p class="text-user">ФИО:</p>
+                    <input class="input-user-data" type="text" id="" placeholder="ФИО">
+                    <p class="text-user">Должность:</p>
+                    <input class="input-user-data" type="text" id="" placeholder="Должность">
+                    <p class="text-user">Логин:</p>
+                    <input class="input-user-data" type="text" id="" placeholder="Логин">
+                    <p class="text-user">Пароль:</p>
+                    <input class="input-user-data" type="text" id="" placeholder="Пароль">
+                    <button class="button-control-panel" id="new-user">Создать</button>
+                    <button class="button-control-panel" id="edit-user">Редактировать</button>
+                    <button class="button-control-panel" id="delet-user">Удалить</button>
+                    <button class="button-control-panel" id="clear-user">Очистить</button>
+                </div>
+                <div id="right-section-control">
+
+                </div>
             </div>
         </div>
     </section>

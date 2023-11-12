@@ -17,7 +17,7 @@ body {
     height: 150px;
     text-align: center;
     background-image: url(./img/header-img.jpg);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -84,6 +84,7 @@ body {
     height: 50px;
 }
 
+#control-panel,
 #prays-list-panel,
 #button-autorization,
 #invoice-panel,
@@ -115,7 +116,7 @@ body {
     font-size: 50px;
     margin-top: 600px;
     margin-bottom: 200px;
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
 #footer-section {

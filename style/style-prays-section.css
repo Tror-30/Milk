@@ -59,7 +59,8 @@
     top: 25%;
     left: 5%
 }
-#block-basket h3 {
+#block-basket h2 {
+    color: red;
     margin: auto;
     width: 90%;
     cursor: context-menu;
@@ -71,13 +72,28 @@
     cursor: context-menu;
     font-size: 16px;
 }
-.block-basket-list {
+#block-basket button {
+    background-color: #176fd7;
+}
+#block-basket-list {
     display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.block-basket-element{
+    display: inline;
     width: 90%;
     text-align: center;
     margin: auto;
     margin-top: 5px;
     border-bottom: 1px solid black;
+}
+.inputElem {
+    width: 20%;
+    height: 25px;
+    margin-top: 3px;
+    margin-bottom: 5px;
 }
 #get-product-list {
     margin: 5px;
@@ -121,6 +137,7 @@
 }
 .text-params {
     display: inline-flex;
+    text-align: center;
 }
 .cart-section-text {
     cursor: context-menu;
@@ -131,9 +148,17 @@
     text-align: center;
     margin-top: 5px;
 }
+.select-fill,
+.select-package,
+.select-percent,
 .select-volume {
     padding: 3px;
     border-radius: 5px;
+}
+.cart-filler,
+.cart-volume {
+    display: inline-flex;
+    text-align: center;
 }
 #img-sour-cream {
     width: 320px;

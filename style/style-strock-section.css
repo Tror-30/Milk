@@ -3,12 +3,71 @@
     height: 100vh;
     text-align: center;
 }
+
 #header-strock {
     width: 100%;
     font-size: 40px;
     text-align: center;
 }
+
 #section-strock {
-    width: 95%;
-    height: 95%;
+    width: 90%;
+    height: 90%;
+    text-align: start;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5, 1vh));
+    grid-template-rows: repeat(1, 1vh);
+}
+
+.table-block-row-strock-5,
+.table-block-row-strock-4,
+.table-block-row-strock-3,
+.table-block-row-strock-2,
+.table-block-row-strock-1 {
+    border: 1px solid black;
+    width: 30%;
+    height: 25px;
+    margin: 0;
+    padding: 5px;
+}
+
+.table-block-strock-1 {
+    border: 1px solid black;
+    width: 300px;
+    height: 25px;
+    margin: 0;
+    padding: 5px;
+}
+
+.table-block-strock-2 {
+    border: 1px solid black;
+    width: 40px;
+    height: 25px;
+    margin: 0;
+    padding: 5px;
+}
+
+.table-block-strock-3 {
+    border: 1px solid black;
+    width: 40px;
+    height: 25px;
+    margin: 0;
+    padding: 5px;
+}
+
+.table-block-strock-4 {
+    border: 1px solid black;
+    width: 40px;
+    height: 25px;
+    margin: 0;
+    padding: 5px;
+}
+
+.table-block-strock-5 {
+    border: 1px solid black;
+    width: 40px;
+    height: 25px;
+    margin: 0;
+    padding: 5px;
 }
